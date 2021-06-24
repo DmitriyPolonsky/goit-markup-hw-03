@@ -9,6 +9,30 @@
   outline: 2px solid tomato;
 }*/
 
+/* сброс свойств*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
@@ -17,12 +41,45 @@
   text-decoration: none;
 }
 
+
+/*общие*/
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
 body {
   font-family: var(--main-font);
 }
+/*=======HEADER=======*/
 
-/*=======LOGO=======*/
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  border-bottom: 1px solid #ECECEC
+}
+
+/*LOGO*/
 .logo {
+  margin-right: 92px;
+
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -38,24 +95,18 @@ body {
 .logo-color-three {
   color: #ffffff;
 }
-/*=======END LOGO=======*/
-
-/*=======HEADER=======*/
-
-.header {
-  font-family: var(--main-font);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
+/*END LOGO*/
 
 .main-navigation {
+  display: flex;
 }
 
 .menu {
+  display: flex;
+  align-items: center;
 }
-.menu-item {
+.menu-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .menu-link {
@@ -72,8 +123,10 @@ body {
 }
 
 .contact-header {
+  display: flex;
 }
-.contact-header-item {
+.contact-header-item:not(:last-child) {
+  margin-right: 50px;
 }
 .contact-header-link {
   color: #757575;
