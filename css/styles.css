@@ -5,11 +5,11 @@
   --text-title-color: #212121;
 }
 
-/*.outline {
+.outline {
   outline: 2px solid tomato;
-}*/
+}
 
-/* сброс свойств*/
+/* сброс стилей по селектору тега*/
 
 h1,
 h2,
@@ -41,7 +41,6 @@ img {
   text-decoration: none;
 }
 
-
 /*общие*/
 
 .container {
@@ -49,7 +48,6 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-
 }
 
 body {
@@ -73,7 +71,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  border-bottom: 1px solid #ECECEC
+  border-bottom: 1px solid #ececec;
 }
 
 /*LOGO*/
@@ -142,6 +140,8 @@ body {
   text-align: center;
   background: #2f303a;
 }
+.hero-container {
+}
 .hero-title {
   font-family: var(--main-font);
   font-weight: 900;
@@ -175,12 +175,26 @@ body {
 /*=======FEATURES=======*/
 
 .features {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .features-list {
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: space-between;*/
+  margin-top: -30px;
+  margin-left: -30px;
 }
 .features-item {
+  /*width: 270px;*/
+  margin-top: 30px;
+  margin-left: 30px;
+
+  flex-basis: calc((100% - 120px) / 4);
 }
 .features-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -202,8 +216,12 @@ body {
 /*=======SERVICES=======*/
 
 .services {
+  padding-top: 0px;
+  padding-bottom: 94px;
 }
 .services-heading {
+  margin-bottom: 50px;
+
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -213,7 +231,16 @@ body {
 
   color: var(--text-title-color);
 }
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
 .services-list-item {
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 /*=======END SERVICES=======*/
