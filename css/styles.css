@@ -317,11 +317,21 @@ body {
 .footer {
   background-color: #2f303a;
 }
+.footer-container {
+  padding: 60px 0;
+}
+
+.logo-footer {
+  margin-bottom: 20px;
+}
+
 .footer-address {
 }
 .footer-address-list {
 }
-.fotter-address-item {
+
+.fotter-address-item :not(:last-child) {
+  margin-bottom: 9px;
 }
 .fotter-address-link {
   font-style: normal;
