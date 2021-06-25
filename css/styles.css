@@ -241,6 +241,8 @@ body {
 .services-list-item {
   margin-top: 30px;
   margin-left: 30px;
+
+  flex-basis: calc((100% - 90px) / 3);
 }
 
 /*=======END SERVICES=======*/
@@ -248,8 +250,13 @@ body {
 /*=======TEAM=======*/
 
 .team {
+  background: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .team-heading {
+  margin-bottom: 50px;
+
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -260,8 +267,31 @@ body {
   color: var(--text-title-color);
 }
 .team-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: -30px;
+  margin-left: -30px;
 }
+
+.team-list-item {
+  margin-top: 30px;
+  margin-left: 30px;
+
+  flex-basis: calc((100% - 120px) / 4);
+
+  background: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-member-frame {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-member-name {
+  margin-bottom: 10px;
+
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
