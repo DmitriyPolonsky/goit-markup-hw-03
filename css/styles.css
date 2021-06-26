@@ -1,3 +1,4 @@
+/*variable*/
 :root {
   --main-font: "Roboto", sans-serif;
   --secondary-font: "Raleway", sans-serif;
@@ -5,7 +6,7 @@
   --text-title-color: #212121;
 }
 
-/* сброс стилей по селектору тега*/
+/* reset styles by tag selector*/
 
 h1,
 h2,
@@ -37,7 +38,7 @@ img {
   text-decoration: none;
 }
 
-/*общие*/
+/*general*/
 
 .container {
   width: 1200px;
@@ -49,6 +50,7 @@ img {
 body {
   font-family: var(--main-font);
 }
+
 /*=======HEADER=======*/
 
 .header-container {
@@ -331,7 +333,7 @@ body {
 .footer-address-list {
 }
 
-.fotter-address-item :not(:last-child) {
+.fotter-address-item:not(:last-child) {
   margin-bottom: 9px;
 }
 .fotter-address-link {
@@ -368,12 +370,27 @@ body {
 
 /*=======PORFOLIO PAGE=======*/
 
-.filter-list {
+.porfolio {
+}
+.portfolio-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.filter-item {
+/*filter*/
+.filter-list {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
 }
 .filter-buttom {
+  padding: 6px 22px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -384,6 +401,9 @@ body {
 
   background: #f5f4fa;
   border-radius: 4px;
+
+  border: none;
+
   cursor: pointer;
 }
 
@@ -398,11 +418,35 @@ body {
   background: var(--accent-color);
 }
 
+/*end filter*/
+
+/*gallery*/
+
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: -30px;
+  margin-left: -30px;
 }
 .portfolio-item {
+  margin-top: 30px;
+  margin-left: 30px;
+
+  flex-basis: calc((100% - 90px) / 3);
 }
+
+.portfolio-item-frame {
+  padding: 20px 24px;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
 .portfolio-item-name {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -417,5 +461,7 @@ body {
   letter-spacing: 0.03em;
 
   color: #757575;
+
+  /*end gallery*/
 }
 /*=======END PORFOLIO PAGE=======*/
