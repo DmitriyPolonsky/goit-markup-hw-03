@@ -53,12 +53,6 @@ body {
 
 /*=======HEADER=======*/
 
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -70,6 +64,12 @@ body {
   letter-spacing: 0.02em;
 
   border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*LOGO*/
@@ -135,14 +135,14 @@ body {
 
 /*=======HERO=======*/
 .hero {
+  padding: 200px 0;
   text-align: center;
   background: #2f303a;
 }
 .hero-container {
-  padding: 200px 0;
 }
 .hero-title {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 
   font-family: var(--main-font);
   font-weight: 900;
@@ -318,10 +318,10 @@ body {
 
 /*=======FOOTER=======*/
 .footer {
+  padding: 60px 0;
   background-color: #2f303a;
 }
 .footer-container {
-  padding: 60px 0;
 }
 
 .logo-footer {
@@ -370,11 +370,11 @@ body {
 
 /*=======PORFOLIO PAGE=======*/
 
-.porfolio {
-}
-.portfolio-container {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.portfolio-container {
 }
 
 /*filter*/
